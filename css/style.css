@@ -14,18 +14,6 @@ body {
     overflow: hidden;
 }
 
-h2{
-    font-family: franklinm54;
-    letter-spacing: 2px;
-    font-size: 26px;
-}
-
-h3{
-    font-family: franklinm54;
-    letter-spacing: 2px;
-    font-size: 22px;
-}
-
 ul{
     margin: 0;
     padding: 0;
@@ -37,7 +25,7 @@ textarea {
 
 .button_round{
     border-radius: 28px;
-    background: #73e650;
+    background: #b3001b;
     border: none;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -48,12 +36,12 @@ textarea {
 }
 
 .button_round:hover{
-    background: #7cef59;
+    background: #b3001b;
 }
 
 .button_1{
     height: 38px;
-    background: #73e650;
+    background: #b3001b;
     border: none;
     cursor:pointer;
     padding-left: 20px;
@@ -62,20 +50,20 @@ textarea {
 }
 
 .button_1:hover{
-    background: #7cef59;
+    background: #b3001b;
 }
 
 /*Header*/
 header{
     background-color: #ffffff;
-    color: #373c91;
+    color: #262626;
     padding-top:10px;
     min-height:70px;
-    border-bottom: #41469B 3px solid;
+    border-bottom: #262626 3px solid;
 }
 
 header a{
-    color: #373c91;
+    color: #262626;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 26px;
@@ -108,43 +96,33 @@ header nav{
 }
 
 header .highlight{
-    color: #afafb4;
+    color: #262626;
 }
 
 header .highlight2{
-    color: #73e650;
+    color: #b3001b;
 }
 
 header .current a{
-    color: #73e650;
+    color: #b3001b;
     font-weight: bold;
 }
 
 header a:hover{
-    color: #73e650;
-}
-
-header label, #hamburger{
-    display: none;
+    color: #b3001b;
 }
 
 /*Showcase*/
 #showcase{
     min-height: 600px;
-    background:url("../img/casual-close-up-colors-1954524.png") no-repeat;
+    background:url("../caracorrendo.jpg") no-repeat;
     background-size: cover;
     text-align: center;
     color: #F0F5F5;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
 }
 
 #showcase h1{
-    font-family: franklinm54;
-    letter-spacing: 2px;
-    margin-top: 10px;
+    margin-top: 100px;
     font-size: 55px;
     margin-bottom: 10px;
 }
@@ -158,13 +136,9 @@ header label, #hamburger{
     padding: 15px;
     color: #000000;
     background: #FFFFFF;
-    border-bottom: #41469B 3px solid;
 }
 
 #newsletter h1{
-    font-family: franklinm54;
-    letter-spacing: 2px;
-    font-size: 26px;
     float: left;
 }
 
@@ -181,7 +155,7 @@ header label, #hamburger{
 
 /*Infos*/
 #infos{
-    margin: 30px 0px 14px;
+    margin-top: 20px;
 }
 
 #infos .info{
@@ -197,13 +171,10 @@ header label, #hamburger{
 /*Planos*/
 
 #planos {
-    margin: 30px 0 14px;
+    margin-top: 20px;
 }
 
 #planos h2{
-    font-family: franklinm54;
-    letter-spacing: 2px;
-    font-size: 26px;
     text-align: center;
 }
 
@@ -228,46 +199,28 @@ header label, #hamburger{
 }
 
 #planos .main{
-    border-top: 5px solid #373c91;
+    border-top: 5px solid #262626;
     color: #000000;
     font-size: 25px;
 }
 
 #planos .caixa-preço li{
     padding: 20px;
-    border-bottom: 1px solid #41469B;
+    border-bottom: 1px solid #262626;
     text-align: center;
 }
 
 #planos .caixa-preço .preço{
-    background-color: #ACA9BB;
+    background-color: rgb(112, 110, 122);
     font-size: 20px;
 }
-
-/*Feed*/
-
-#feeds{
-    margin: 30px 0px 14px;
-    
-}
-
-#feeds h2{
-    text-align: center;
-}
-
-#feeds .feed{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
 /*Sidebar*/
 aside#sidebar{
     float: right;
     width: 30%;
     margin-top: 10px;
     padding-left: 10px;
-    border-left: #73e650 3px solid;
+    border-left: #b3001b 3px solid;
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
@@ -295,7 +248,7 @@ footer{
     padding: 20px;
     margin-top: 40px;
     color: #FFFFFF;
-    background-color: #373469;
+    background-color: #262626;
     text-align: left;
 }
 
@@ -309,10 +262,19 @@ footer{
 }
 
 #direitos a:hover{
-    color: #73e650;
+    color: #b3001b;
 }
 
 /*Custom font*/
+@font-face{
+    font-family: noricanCursive;
+    src: url(./fonts/Norican-Regular.ttf)
+}
+
+@font-face{
+    font-family: franklinm54;
+    src: url(./fonts/franklinm54-Regular.ttf)
+}
 
 @font-face{
     font-family: franklinm54;
@@ -321,15 +283,9 @@ footer{
 
 /*Media Queries*/
 @media(max-width: 1095px){
-
-    @media(max-width: 568px){
-        header #logo{
-            font-size: 20px;
-        }
-    }
     header #logo,
     header nav,
-    header label,
+    header nav li,
     #newsletter h1,
     #newsletter form,
     #infos .info,
@@ -345,32 +301,11 @@ footer{
         padding-bottom:20px;
     }
 
-    header label{
-        display: inline-block;
-        color: #000000;
-        background: #ffffff;
-        font-style: normal;
-        font-size: 32px;
-    }
-
-    header ul li{
-        display: block;
-    }
-
-    header ul{
-        display: none;
-    }
-
-    header li{
-        padding: 0px;
-    }
-
-    header input:checked ~ ul{
-        display: block;
+    #showcase h1{
+        font-size: 45px;
     }
 
     #showcase h1{
-        font-size: 40px;
         margin-top: 40px;
     }
 
@@ -388,5 +323,4 @@ footer{
         padding-left: 0;
         border-left: none;
     }
-
 }
